@@ -15,6 +15,7 @@ class ControladorJuego
 
     public:
         ControladorJuego(ModeloJuego&, VistaJuego&);
+
         void empezar();
 
 };

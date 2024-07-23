@@ -14,10 +14,10 @@ bool ModeloJuego::generarNumero() {
 
 }
 
-bool ModeloJuego::adivinar(unsigned int adivinar) {
+bool ModeloJuego::adivinar(unsigned int num) {
 
-    agregarNumeroBuffer(adivinar);
-    return adivinar == getNumeroAdivinar();
+    agregarNumeroBuffer(num);
+    return num == getNumeroAdivinar();
 
 }
 
@@ -25,7 +25,7 @@ unsigned int ModeloJuego::getNumeroAdivinar(){
     return numeroAdivinar;
 }
 
-bool ModeloJuego::depuradorDeCaracteres(unsigned int num)
+bool ModeloJuego::depuradorDeNumero(unsigned int num)
 {
     if(num>=1 && num<=10)
     {
@@ -35,18 +35,20 @@ bool ModeloJuego::depuradorDeCaracteres(unsigned int num)
 }
 
 
-void ModeloJuego::agregarNumeroBuffer(unsigned int n)
+void ModeloJuego::agregarNumeroBuffer(unsigned int num)
 {
-    buffer.insert(n);
+    buffer.insert(num);
 
 }
 
-bool ModeloJuego::numeroEnBuffer(unsigned int n)
+bool ModeloJuego::numeroEnBuffer(unsigned int num)
 {
-    return buffer.find(n) != buffer.end();
+    return buffer.find(num) != buffer.end();
 }
 
 bool ModeloJuego::bufferVacio()
 {
     return buffer.empty();
 }
+
+

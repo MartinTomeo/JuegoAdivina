@@ -8,18 +8,18 @@
 class ModeloJuego
 {
     private:
-        int numeroAdivinar;
+        unsigned int numeroAdivinar;
         std::set<int> buffer;
-
     public:
         ModeloJuego();
         bool generarNumero();
         bool adivinar(unsigned int);
         unsigned int getNumeroAdivinar();
-        bool depuradorDeCaracteres(unsigned int);
-        void agregarNumeroBuffer(unsigned int n);
-        bool numeroEnBuffer(unsigned int n);
+        bool depuradorDeNumero(unsigned int);
+        void agregarNumeroBuffer(unsigned int);
+        bool numeroEnBuffer(unsigned int);
         bool bufferVacio();
+
 
 
 

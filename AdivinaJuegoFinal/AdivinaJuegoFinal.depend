@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1721706654 source:c:\users\usuario\desktop\adivinajuegofinal\src\controladorjuego.cpp
+1721709480 source:c:\users\usuario\desktop\adivinajuegofinal\src\controladorjuego.cpp
 	"ControladorJuego.h"
 
-1721585362 c:\users\usuario\desktop\adivinajuegofinal\include\controladorjuego.h
+1721709480 c:\users\usuario\desktop\adivinajuegofinal\include\controladorjuego.h
 	"ModeloJuego.h"
 	"VistaJuego.h"
 	<iostream>
@@ -10,19 +10,19 @@
 1721704843 source:c:\users\usuario\desktop\adivinajuegofinal\src\vistajuego.cpp
 	"VistaJuego.h"
 
-1721704868 c:\users\usuario\desktop\adivinajuegofinal\include\vistajuego.h
+1721709480 c:\users\usuario\desktop\adivinajuegofinal\include\vistajuego.h
 	<iostream>
 	<string>
 
-1721706654 source:c:\users\usuario\desktop\adivinajuegofinal\src\modelojuego.cpp
+1721711275 source:c:\users\usuario\desktop\adivinajuegofinal\src\modelojuego.cpp
 	"ModeloJuego.h"
 
-1721706214 c:\users\usuario\desktop\adivinajuegofinal\include\modelojuego.h
+1721713019 c:\users\usuario\desktop\adivinajuegofinal\include\modelojuego.h
 	<stdlib.h>
 	"set"
 	"time.h"
 
-1721703487 source:c:\users\usuario\desktop\adivinajuegofinal\main.cpp
+1721707000 source:c:\users\usuario\desktop\adivinajuegofinal\main.cpp
 	"ModeloJuego.h"
 	"VistaJuego.h"
 	"ControladorJuego.h"

@@ -10,7 +10,7 @@ void ControladorJuego::empezar() {
     while (!adivinaCorrecto) {
         vista.mensajeAdivinanza();
         std::cin >> adivinanza;
-        if(!modelo.depuradorDeCaracteres(adivinanza))
+        if(!modelo.depuradorDeNumero(adivinanza))
         {
             vista.mensajeNumeroValido();
         }
