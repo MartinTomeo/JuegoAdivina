@@ -83,8 +83,9 @@
 	"VistaJuego.h"
 	<iostream>
 
-1721713019 source:c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\src\controladorjuego.cpp
+1721714433 source:c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\src\controladorjuego.cpp
 	"ControladorJuego.h"
+	<limits>
 
 1721713019 source:c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\src\modelojuego.cpp
 	"ModeloJuego.h"

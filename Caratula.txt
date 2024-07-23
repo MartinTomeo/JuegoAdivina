@@ -1,0 +1,45 @@
+Fecha: 23/07/2024
+Examen Final Programacion 2
+Apellido y Nombre: Tomeo, Martin Fernando.
+Un juego simple en el que tienes que adivinar un número del 1 al 10 que se termina cuando lo adivinas. El juego fue programado en un patrón de MVC y hace uso de distintas librerías estándar de Cpp (STL, STD, TIME), además de usar la suite de pruebas TAU.  Dichas pruebas están como comentario en el archivo main.cpp del proyecto y la carpeta con los archivos de la biblioteca ya están dentro de la carpeta del proyecto. Solo tendrías que des-comentar las pruebas y el “include” de la biblioteca tau y comentar la funcion “main” del archivo main.cpp.
+Abajo, como es pedido en la consigna, dejo copia de las pruebas que se encuentran en el archivo main.cpp comentadas.
+ 
+#include<tau/tau.h>
+TAU_MAIN()
+TEST (TestModelo, Modelo)
+{
+    ModeloJuego m;//llama generar numero
+    CHECK(m.generarNumero()==true);//chequeo generar numero
+    CHECK(m.getNumeroAdivinar()>=1);//chequeo el techo del numero que genero el constructor
+    CHECK(m.getNumeroAdivinar()<=10);//chequeo el techo del numero generado
+
+
+    //adivinar
+    CHECK(m.adivinar(m.getNumeroAdivinar())==true);//chequeo que adivinar devuelva true cuando coinside con el numeroAdivinar
+    CHECK(m.adivinar(!m.getNumeroAdivinar())==false);//chequeo que devuelva false cuando no coincide con numeroAdivinar
+    CHECK(m.bufferVacio()==false);
+    m.adivinar(5);
+    CHECK(m.numeroEnBuffer(5)==true);
+
+    //depuradorDeCaracteres
+    CHECK(m.depuradorDeCaracteres(40)==false);
+    CHECK(m.depuradorDeCaracteres(5)==true);
+    CHECK(m.depuradorDeCaracteres('c')==false);
+
+    //bufferVacio && agregarNumeroBuffer
+    ModeloJuego mo;
+    CHECK(mo.bufferVacio()==true);
+    mo.agregarNumeroBuffer(1);
+    mo.agregarNumeroBuffer(2);
+    mo.agregarNumeroBuffer(3);
+    mo.agregarNumeroBuffer(4);
+    mo.agregarNumeroBuffer(4);
+    CHECK(mo.bufferVacio()==false);
+
+    //numeroEnBuffer
+    CHECK(mo.numeroEnBuffer(1)==true);
+    CHECK(mo.numeroEnBuffer(2)==true);
+    CHECK(mo.numeroEnBuffer(3)==true);
+    CHECK(mo.numeroEnBuffer(4)==true);
+    CHECK(mo.numeroEnBuffer(5)==false);
+}
