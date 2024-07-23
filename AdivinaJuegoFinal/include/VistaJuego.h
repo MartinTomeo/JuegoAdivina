@@ -13,6 +13,9 @@ class VistaJuego
         void mensajeNumeroBajo();
         void mensajeNumeroValido();
         void mensajeDuplicado();
+        void mensajeIntroducirLimSup();
+        void mensajeIntroducirLimInf();
+        void mensajeErrorLimites();
 
 
 };

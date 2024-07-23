@@ -14,12 +14,11 @@ int main() {
 
 
 /*
-
 TAU_MAIN()
 TEST (TestModelo, Modelo)
 {
     ModeloJuego m;//llama generar numero
-    CHECK(m.generarNumero()==true);//chequeo generar numero
+    CHECK(m.generarNumero(10, 1)==true);//chequeo generar numero
     CHECK(m.getNumeroAdivinar()>=1);//chequeo el techo del numero que genero el constructor
     CHECK(m.getNumeroAdivinar()<=10);//chequeo el techo del numero generado
 
@@ -32,9 +31,9 @@ TEST (TestModelo, Modelo)
     CHECK(m.numeroEnBuffer(5)==true);
 
     //depuradorDeCaracteres
-    CHECK(m.depuradorDeCaracteres(40)==false);
-    CHECK(m.depuradorDeCaracteres(5)==true);
-    CHECK(m.depuradorDeCaracteres('c')==false);
+    CHECK(m.depuradorDeNumero(40,100, 200)==false);
+    CHECK(m.depuradorDeNumero(4,1, 20)==true);
+    CHECK(m.depuradorDeNumero('c', 1, 20)==false);
 
     //bufferVacio && agregarNumeroBuffer
     ModeloJuego mo;
@@ -54,6 +53,13 @@ TEST (TestModelo, Modelo)
     CHECK(mo.numeroEnBuffer(5)==false);
 
 
-}
+    CHECK(mo.controlLimites(10, 10)==false);
+    CHECK(mo.controlLimites(1, 10)==false);
+    CHECK(mo.controlLimites(10, 1)==true);
 
+
+
+}
 */
+
+

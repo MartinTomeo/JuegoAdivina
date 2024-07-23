@@ -3,13 +3,13 @@
 ModeloJuego::ModeloJuego()
 {
     srand(time(NULL));
-    generarNumero();
+
 }
 
 
-bool ModeloJuego::generarNumero() {
+bool ModeloJuego::generarNumero(unsigned int sup, unsigned int inf) {
 
-    numeroAdivinar = rand() % 10 + 1;
+    numeroAdivinar = rand() % sup + inf ;
     return true;
 
 }
@@ -25,9 +25,9 @@ unsigned int ModeloJuego::getNumeroAdivinar(){
     return numeroAdivinar;
 }
 
-bool ModeloJuego::depuradorDeNumero(unsigned int num)
+bool ModeloJuego::depuradorDeNumero(unsigned int num, unsigned int limInf, unsigned int limSup)
 {
-    if(num>=1 && num<=10)
+    if(num>=limInf && num<=limSup)
     {
         return true;
     }
@@ -52,3 +52,12 @@ bool ModeloJuego::bufferVacio()
 }
 
 
+bool ModeloJuego::controlLimites(unsigned int limSup, unsigned int limInf)
+{
+    if(limSup<=limInf)
+    {
+        return false;
+    }
+    return true;
+
+}

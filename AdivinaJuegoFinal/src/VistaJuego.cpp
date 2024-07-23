@@ -36,3 +36,15 @@ void VistaJuego::mensajeNumeroValido(){
 void VistaJuego::mensajeDuplicado(){
     std::cout << "Numero ya fue ingresado" << std::endl;
 }
+
+void VistaJuego::mensajeErrorLimites(){
+    std::cout<<"Error en los limites ingresados"<<std::endl;
+}
+
+void VistaJuego::mensajeIntroducirLimSup(){
+    std::cout<<"Introduce limite superior: ";
+}
+
+void VistaJuego::mensajeIntroducirLimInf(){
+    std::cout<<"Introduce limite Inferior: ";
+}

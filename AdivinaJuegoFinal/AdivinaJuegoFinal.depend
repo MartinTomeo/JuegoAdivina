@@ -64,17 +64,17 @@
 1653407012 c:\users\usuario\desktop\adivinajuegofinal\tau\misc.h
 	<inttypes.h>
 
-1721707000 source:c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\main.cpp
+1721771241 source:c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\main.cpp
 	"ModeloJuego.h"
 	"VistaJuego.h"
 	"ControladorJuego.h"
 
-1721714327 c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\include\modelojuego.h
+1721770223 c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\include\modelojuego.h
 	<stdlib.h>
 	"set"
 	"time.h"
 
-1721709480 c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\include\vistajuego.h
+1721770666 c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\include\vistajuego.h
 	<iostream>
 	<string>
 
@@ -83,13 +83,50 @@
 	"VistaJuego.h"
 	<iostream>
 
-1721714433 source:c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\src\controladorjuego.cpp
+1721770721 source:c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\src\controladorjuego.cpp
 	"ControladorJuego.h"
 	<limits>
 
-1721713019 source:c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\src\modelojuego.cpp
+1721770223 source:c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\src\modelojuego.cpp
 	"ModeloJuego.h"
 
-1721704843 source:c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\src\vistajuego.cpp
+1721770751 source:c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\src\vistajuego.cpp
 	"VistaJuego.h"
+
+1653407012 c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\tau\tau.h
+	<tau/types.h>
+	<tau/misc.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdarg.h>
+	<errno.h>
+	<libgen.h>
+	<unistd.h>
+	<sys/types.h>
+	<sys/wait.h>
+	<signal.h>
+	<time.h>
+	<fcntl.h>
+	<sys/stat.h>
+	<Windows.h>
+	<io.h>
+	<valgrind.h>
+	<exception>
+	<limits.h>
+	<time.h>
+	<sys/syscall.h>
+	<unistd.h>
+	<time.h>
+	<mach/mach_time.h>
+
+1653407012 c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\tau\types.h
+	<tau/compilers.h>
+	<cstdint>
+	<stdint.h>
+
+1653407012 c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\tau\compilers.h
+
+1653407012 c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\tau\misc.h
+	<inttypes.h>
 
