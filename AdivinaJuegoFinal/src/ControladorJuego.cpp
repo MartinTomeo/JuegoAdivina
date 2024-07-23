@@ -1,4 +1,5 @@
 #include "ControladorJuego.h"
+#include <limits>
 
 ControladorJuego::ControladorJuego(ModeloJuego& m, VistaJuego& v) : modelo(m), vista(v) {}
 
@@ -9,7 +10,14 @@ void ControladorJuego::empezar() {
 
     while (!adivinaCorrecto) {
         vista.mensajeAdivinanza();
-        std::cin >> adivinanza;
+
+         while (!(std::cin >> adivinanza)) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            vista.mensajeNumeroValido();
+            vista.mensajeAdivinanza();
+        }
+
         if(!modelo.depuradorDeNumero(adivinanza))
         {
             vista.mensajeNumeroValido();

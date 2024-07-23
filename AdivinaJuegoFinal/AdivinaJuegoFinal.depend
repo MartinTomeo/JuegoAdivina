@@ -64,3 +64,31 @@
 1653407012 c:\users\usuario\desktop\adivinajuegofinal\tau\misc.h
 	<inttypes.h>
 
+1721707000 source:c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\main.cpp
+	"ModeloJuego.h"
+	"VistaJuego.h"
+	"ControladorJuego.h"
+
+1721714327 c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\include\modelojuego.h
+	<stdlib.h>
+	"set"
+	"time.h"
+
+1721709480 c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\include\vistajuego.h
+	<iostream>
+	<string>
+
+1721709480 c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\include\controladorjuego.h
+	"ModeloJuego.h"
+	"VistaJuego.h"
+	<iostream>
+
+1721713019 source:c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\src\controladorjuego.cpp
+	"ControladorJuego.h"
+
+1721713019 source:c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\src\modelojuego.cpp
+	"ModeloJuego.h"
+
+1721704843 source:c:\users\usuario\desktop\tomeo, martin-programacion 2-072023\juegoadivina\adivinajuegofinal\src\vistajuego.cpp
+	"VistaJuego.h"
+

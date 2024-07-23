@@ -9,7 +9,7 @@ class ModeloJuego
 {
     private:
         unsigned int numeroAdivinar;
-        std::set<int> buffer;
+        std::set<unsigned int> buffer;
     public:
         ModeloJuego();
         bool generarNumero();
